@@ -9,7 +9,7 @@ def print_slow(str):
         sleep(0.5)
 
 def quebra_linha():                                                     
-    print(''*50)
+    print() 
   
 personagem1 = 'ANNA'
 personagem2 = 'JOHN'
