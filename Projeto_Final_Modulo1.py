@@ -6,7 +6,7 @@ def print_slow(str):
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        sleep(0.02)
+        sleep(0.5)
 
 def quebra_linha():                                                     
     print(''*50)
