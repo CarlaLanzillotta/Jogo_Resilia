@@ -6,7 +6,7 @@ def print_slow(str):
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        sleep(0.5)
+        sleep(0.02)
 
 def quebra_linha():                                                     
     print() 
@@ -107,6 +107,7 @@ def terceira_fase_jogador1():
        
         if obstaculo_fase3 == 1: 
             print_slow(f'\nQue pena...{personagem1} escorregou nas pedras e foi levada pela correnteza!\n\n\FIM DE JOGO!')
+            sys.exit()
             escolha_fase3 = True
         elif obstaculo_fase3 == 2:
             quebra_linha()
@@ -127,7 +128,7 @@ def fase_final_jogador1():
         obstaculo_final = int(input('Digite a opção escolhida: '))
        
         if obstaculo_final == 1: 
-            print_slow(f'\nQue pena...{personagem1} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!') 
+            print(f'\nQue pena...{personagem1} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')        
             escolha_final = True
         elif obstaculo_final == 2:
             quebra_linha()
@@ -151,7 +152,7 @@ def primeira_fase_jogador2():
 
         if obstaculo_fase1 == 1: 
             print_slow(f'\nQue pena...{personagem2} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')
-            
+            sys.exit()
             escolha_fase1 = True
         elif obstaculo_fase1 == 2:
             quebra_linha()
@@ -173,6 +174,7 @@ def segunda_fase_jogador2():
 
         if obstaculo_fase2 == 1: 
             print_slow(f'\nQue pena...{personagem2} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')
+            sys.exit()
             escolha_fase2 = True
         elif obstaculo_fase2 == 2:
             quebra_linha()
@@ -194,6 +196,7 @@ def terceira_fase_jogador2():
        
         if obstaculo_fase3 == 1: 
             print_slow(f'\nQue pena...{personagem2} escorregou nas pedras e foi levada pela correnteza!\n\n\FIM DE JOGO!')
+            sys.exit()
             escolha_fase3 = True
         elif obstaculo_fase3 == 2:
             quebra_linha()
@@ -214,8 +217,7 @@ def fase_final_jogador2():
         obstaculo_final = int(input('Digite a opção escolhida: '))
        
         if obstaculo_final == 1: 
-            print_slow(f'\nQue pena...{personagem2} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!') 
-            sys,exit()
+            print_slow(f'\nQue pena...{personagem2} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')            
             escolha_final = True
         elif obstaculo_final == 2:
             quebra_linha()
@@ -239,6 +241,7 @@ def primeira_fase_jogador3():
 
         if obstaculo_fase1 == 1: 
             print_slow(f'\nQue pena...{personagem3} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')
+            sys.exit()
             escolha_fase1 = True
         elif obstaculo_fase1 == 2:
             quebra_linha()
@@ -260,6 +263,7 @@ def segunda_fase_jogador3():
 
         if obstaculo_fase2 == 1: 
             print_slow(f'\nQue pena...{personagem3} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')
+            sys.exit()
             escolha_fase2 = True
         elif obstaculo_fase2 == 2:
             quebra_linha()
@@ -281,6 +285,7 @@ def terceira_fase_jogador3():
        
         if obstaculo_fase3 == 1: 
             print_slow(f'\nQue pena...{personagem3} escorregou nas pedras e foi levada pela correnteza!\n\n\FIM DE JOGO!')
+            sys.exit()
             escolha_fase3 = True
         elif obstaculo_fase3 == 2:
             quebra_linha()
@@ -301,7 +306,7 @@ def fase_final_jogador3():
         obstaculo_final = int(input('Digite a opção escolhida: '))
        
         if obstaculo_final == 1: 
-            print_slow(f'\nQue pena...{personagem3} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!') 
+            print_slow(f'\nQue pena...{personagem3} escorregou nas pedras e foi levada pela correnteza!\n\nFIM DE JOGO!')
             escolha_final = True
         elif obstaculo_final == 2:
             quebra_linha()
