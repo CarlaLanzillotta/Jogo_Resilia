@@ -349,11 +349,11 @@ elif personagem == 3:
 
 # retornar_jogo = False
 # def reiniciar_jogo():
-#     jogar_novamente = input('Deseja jogar novamente?[S / N] ').upper()
+#     jogar_novamente = input('Deseja jogar novamente?[S / N] ')  #incluir upper
 #     while retornar_jogo == False:    
-#         if jogar_novamente= 'S':
+#         if jogar_novamente.upper()== 'S':
 #             retornar_jogo = True
-#         elif jogar_novamente = 'N':
+#         elif jogar_novamente.upper() == 'N':
 #             print('Até logo!')
 #             retornar_jogo = True
 #         else:
